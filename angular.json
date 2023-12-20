@@ -51,7 +51,27 @@
               "vendorChunk": true,
               "extractLicenses": false,
               "sourceMap": true,
-              "namedChunks": true
+              "namedChunks": true,
+              "fileReplacements": [
+                {
+                  "replace": "src/environments/environment.ts",
+                  "with": "src/environments/environment.development.ts"
+                }
+              ]
+            },
+            "stagging": {
+              "buildOptimizer": false,
+              "optimization": false,
+              "vendorChunk": true,
+              "extractLicenses": false,
+              "sourceMap": true,
+              "namedChunks": true,
+              "fileReplacements": [
+                {
+                  "replace": "src/environments/environment.ts",
+                  "with": "src/environments/environment.stagging.ts"
+                }
+              ]
             }
           },
           "defaultConfiguration": "production"
@@ -64,6 +84,9 @@
             },
             "development": {
               "browserTarget": "JunedPothawale_Portfolio:build:development"
+            },
+            "stagging": {
+              "browserTarget": "JunedPothawale_Portfolio:build:stagging"
             }
           },
           "defaultConfiguration": "development"
