@@ -1,0 +1,36 @@
+<div class="fixed grid grid-cols-10 gap-9 align-middle pt-10 text-center place-items-center" id="navbar">
+  <div class="col-start-2 col-end-4 w-full text-3xl -tracking-tighter logo-font font-bold text-center text-white">
+    <a href="/">
+      <h3>{{appName | titlecase}}</h3>
+    </a>
+  </div>
+  <div class="col-start-5 col-end-8 w-full ">
+    <ul class="flex justify-between text-base font-sans font-medium text-gray-600">
+      <li>
+        <a class="nav-link" routerLink="/home" routerLinkActive="active"
+          [routerLinkActiveOptions]="{exact: true}">Home</a>
+      </li>
+      <li>
+        <a class="nav-link" routerLink="/about" routerLinkActive="active"
+          [routerLinkActiveOptions]="{exact: true}">Contact</a>
+      </li>
+      <li>
+        <a class="nav-link" routerLink="/services" routerLinkActive="active"
+          [routerLinkActiveOptions]="{exact: true}">Services</a>
+      </li>
+      <li>
+        <a class="nav-link" routerLink="/works" routerLinkActive="active"
+          [routerLinkActiveOptions]="{exact: true}">Works</a>
+      </li>
+      <li>
+        <a class="nav-link" routerLink="/contact" routerLinkActive="active"
+          [routerLinkActiveOptions]="{exact: true}">Contact</a>
+      </li>
+    </ul>
+  </div>
+  <div class=" w-full col-start-9">
+    <button
+      class="px-5 py-1.5 rounded-xl text-white font-bold text-center bg-gray-400 hover:bg-white hover:text-black transition delay-150">Let`s
+      Talk</button>
+  </div>
+</div>
