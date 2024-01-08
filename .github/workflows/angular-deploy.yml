@@ -21,7 +21,7 @@ jobs:
     - name: Install dependencies and update
       run: |
         npm ci
-        npm update
+        npm install
 
     - name: Build Angular app for gh-pages
       run: npm run build --base-href=/JunedPothawale_Portfolio/ --output-path=docs
