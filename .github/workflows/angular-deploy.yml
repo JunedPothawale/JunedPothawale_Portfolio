@@ -24,7 +24,7 @@ jobs:
         npm update
 
     - name: Build Angular app for gh-pages
-      run: ng build --base-href / --deploy-url / --output-path=docs
+      run: npm run build --base-href / --deploy-url / --output-path=docs
 
     - name: Copy files to gh-pages branch
       run: |
