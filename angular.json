@@ -23,7 +23,7 @@
               "src/styles.css"
             ],
             "scripts": [
-              "./node_modules/flowbite/dist/flowbite.js"
+              "node_modules/flowbite/dist/flowbite.js"
             ]
           },
           "configurations": {
@@ -57,6 +57,20 @@
               ]
             },
             "stagging": {
+              "buildOptimizer": false,
+              "optimization": false,
+              "vendorChunk": true,
+              "extractLicenses": false,
+              "sourceMap": true,
+              "namedChunks": true,
+              "fileReplacements": [
+                {
+                  "replace": "src/environments/environment.ts",
+                  "with": "src/environments/environment.stagging.ts"
+                }
+              ]
+            },
+            "github": {
               "buildOptimizer": false,
               "optimization": false,
               "vendorChunk": true,
